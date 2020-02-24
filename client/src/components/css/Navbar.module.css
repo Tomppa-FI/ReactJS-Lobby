@@ -1,0 +1,64 @@
+.container {
+  background-color: #343a40;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #e6e6e6;
+  justify-content: space-between;
+}
+
+.brand {
+  padding: 15px;
+}
+
+.menu {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.menu__collapsed {
+  display: none;
+}
+
+.link {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #e6e6e6;
+}
+.link:hover {
+  transition: ease-in 0.3s;
+  background-color: rgba(40, 40, 40, 0.7);
+}
+
+.bars {
+  height: 1em;
+  padding: 15px;
+  filter: invert(99%) sepia(1%) saturate(106%) hue-rotate(135deg) brightness(114%) contrast(80%);
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .menu {
+    width: auto;
+  }
+  .menu__collapsed {
+    display: inline-block;
+  }
+
+  .link {
+    display: inline-block;
+  }
+}
+
+/*# sourceMappingURL=Navbar.module.css.map */
